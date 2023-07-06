@@ -14,57 +14,57 @@
 </head>
 
 <body>
-    <div class="hero">
-        <div class="container">
-            <div class="d-flex justify-content-center">
-                <h1 class="mb-3 text-nowrap title">MIGHTY DOOM CALCULATOR</h1>
+    <div class="container">
+        <div class="row mb-3 mt-3">
+            <div class="col-md-12">
+                <h5 class="fw-bold">MIGHTY DOOM CALCULATOR</h5>
             </div>
-            <form class="row" onsubmit="return false" onchange="calc()">
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="level-from" class="form-label">Level from</label>
-                        <input type="number" class="form-control" id="level-from" value="1" min="1">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="level-to" class="form-label">Level to</label>
-                        <input type="number" class="form-control" id="level-to" value="20" min="1">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-12">
-                        <label for="tokens-per-level" class="form-label">Upgrade type</label>
-                        <select class="form-select" id="tokens-per-level">
-                            <option value="2">EQUIPMENT/WEAPON</option>
-                            <option value="7">SLAYER</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-12">
-                        <label for="coins" class="form-label">Coins</label>
-                        <div class="input-group">
-                            <input type="number" class="form-control" id="coins" value="0" readonly>
-                            <button class="btn btn-outline-secondary" type="button" title="Copy to clipboard"
-                                onclick="copyToClipboard(this, 'coins')">
-                                <i class="bi bi-clipboard"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-12">
-                        <label for="tokens" class="form-label">Tokens</label>
-                        <div class="input-group">
-                            <input type="number" class="form-control" id="tokens" value="0" readonly>
-                            <button class="btn btn-outline-secondary" type="button" title="Copy to clipboard"
-                                onclick="copyToClipboard(this, 'tokens')">
-                                <i class="bi bi-clipboard"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </form>
         </div>
+        <form class="row" onsubmit="return false" onchange="calc()">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="level-from" class="form-label">LEVEL FROM</label>
+                    <input type="number" class="form-control" id="level-from" value="1" min="1">
+                </div>
+                <div class="col-md-6">
+                    <label for="level-to" class="form-label">LEVEL TO</label>
+                    <input type="number" class="form-control" id="level-to" value="20" min="1">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="tokens-per-level" class="form-label">UPGRADE TYPE</label>
+                    <select class="form-select" id="tokens-per-level">
+                        <option value="2">EQUIPMENT/WEAPON</option>
+                        <option value="7">SLAYER</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="coins" class="form-label">COINS</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="coins" value="0" readonly>
+                        <button class="btn btn-outline-secondary" type="button" title="Copy to clipboard"
+                            onclick="copyToClipboard(this, 'coins')">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="tokens" class="form-label">TOKENS</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="tokens" value="0" readonly>
+                        <button class="btn btn-outline-secondary" type="button" title="Copy to clipboard"
+                            onclick="copyToClipboard(this, 'tokens')">
+                            <i class="bi bi-clipboard"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"

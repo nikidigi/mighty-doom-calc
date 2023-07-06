@@ -22,10 +22,10 @@ function copyToClipboard(button, inputId) {
     navigator.clipboard.writeText(el.value);
 
     icon.removeClass('bi-clipboard').addClass('bi-clipboard-check');
-    
+
     setTimeout(() => {
         icon.removeClass('bi-clipboard-check').addClass('bi-clipboard');
-    }, 500);
+    }, 333);
 }
 
 $(document).ready(() => {
