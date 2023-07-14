@@ -13,6 +13,8 @@ function calc() {
 
     $('#coins').val(coins);
     $('#tokens').val(tokens);
+    $('#level-from-value').text(from);
+    $('#level-to-value').text(to);
 }
 
 function copyToClipboard(button, inputId) {

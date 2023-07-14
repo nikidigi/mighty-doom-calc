@@ -24,11 +24,13 @@
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="level-from" class="form-label">LEVEL FROM</label>
-                    <input type="number" class="form-control" id="level-from" value="1" min="1">
+                    <input type="range" class="form-range" id="level-from" value="1" min="1" max="80" oninput="calc()">
+                    <span id="level-from-value">1</span>
                 </div>
                 <div class="col-md-6">
                     <label for="level-to" class="form-label">LEVEL TO</label>
-                    <input type="number" class="form-control" id="level-to" value="20" min="1">
+                    <input type="range" class="form-range" id="level-to" value="20" min="1" max="80" oninput="calc()">
+                    <span id="level-to-value">20</span>
                 </div>
             </div>
             <div class="row mb-3">
